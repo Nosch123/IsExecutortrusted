@@ -1,7 +1,8 @@
 // api/[id].js
+import data from '../data/executors.json' assert { type: 'json' };
+
 export default function handler(req, res) {
   try {
-    const data = require('../data/executors.json'); // CommonJS, stabil auf Vercel
     const { id } = req.query;
 
     const item = data.find(x => x.id === String(id).toLowerCase());
