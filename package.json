@@ -1,0 +1,17 @@
+{
+  "name": "IsExecutortrusted",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "IsExecutorTrusted API and website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
