@@ -1,5 +1,9 @@
 // api/[id].js
-import data from '../data/executors.json' with { type: 'json' };
+import { readFile } from 'fs/promises';
+
+const data = JSON.parse(
+  await readFile(new URL('../data/executors.json', import.meta.url))
+);
 
 export default function handler(req, res) {
   try {
