@@ -1,5 +1,5 @@
 // api/executors.js
-import data from '../data/executors.json' assert { type: 'json' };
+import data from '../data/executors.json' with { type: 'json' };
 
 export default function handler(req, res) {
   try {
