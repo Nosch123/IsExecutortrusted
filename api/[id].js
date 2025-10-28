@@ -1,7 +1,14 @@
-import executors from '../data/executors.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 export default function handler(req, res) {
-  const { id } = req.query; // z. B. "xeno"
+  const { id } = req.query; // "xeno"
+
+  // Pfad zur JSON-Datei korrekt ermitteln
+  const filePath = join(process.cwd(), 'data', 'executors.json');
+  const rawData = readFileSync(filePath);
+  const executors = JSON.parse(rawData);
+
   const item = executors.find(x => x.id === String(id).toLowerCase());
 
   res.setHeader('Access-Control-Allow-Origin', '*');
