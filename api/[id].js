@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   const { id } = req.query;
-  const data = require('../../data/executors.json');
+  const data = require('../data/executors.json');
   const item = data.find(x => x.id === String(id).toLowerCase());
 
   res.setHeader('Access-Control-Allow-Origin', '*');
