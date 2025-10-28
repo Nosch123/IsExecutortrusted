@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
     <meta property="og:title" content="IsExecutorTrusted">
-<meta property="og:description" content="Check if your Roblox Executor is untrusted.">
-<meta property="og:image" content="https://i.imgur.com/xBb2tKw.png">
-<meta property="og:url" content="https://is-executor-trusted.vercel.app/">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#8e2de2">
+    <meta property="og:description" content="Check if your Roblox Executor is untrusted.">
+    <meta property="og:image" content="https://i.imgur.com/xBb2tKw.png">
+    <meta property="og:url" content="https://is-executor-trusted.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#8e2de2">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,6 +92,19 @@
             background: #252528;
             transition: 0.3s;
         }
+
+        /* Trusted Hinweis */
+        .trusted-note {
+            background: rgba(34,197,94,0.12);
+            color: #22c55e;
+            border: 1px solid rgba(34,197,94,0.2);
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -121,7 +134,17 @@
                 <td>Bunni</td>
                 <td class="status-untrusted">Untrusted ❌</td>
             </tr>
+          <tr>
+                <td>Xeno</td>
+                <td class="status-trusted">Trusted ✅</td>
+            </tr>
         </table>
+
+        <!-- Trusted Hinweis -->
+        <div class="trusted-note">
+            ⚠️ Trusted Executors are classified as provisionally trustworthy after testing. No guarantee of security. Use at your own risk.
+        </div>
     </main>
 </body>
 </html>
+
