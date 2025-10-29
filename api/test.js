@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  const text = `untrusted<br>additional info here<br>more details`;
+  const text = `sigma<br>67<br>nosch`;
   
   res.status(200).send(text);
 }
