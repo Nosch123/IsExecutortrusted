@@ -1,8 +1,5 @@
 export default function handler(req, res) {
-  const text = `Hallo Noah!
-Das ist ein
-mehrzeiliger Text
-von deiner API.`;
+  const text = `trusted`;
   
   res.status(200).send(text);
 }
